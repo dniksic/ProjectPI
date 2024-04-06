@@ -13,23 +13,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dniksic"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dniksic&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dniksic/Progrmasko_Inzenjerstvo_Project.git",
-    "accountId": "a00e3e50-6baf-4bb7-9676-69ba08a5c0d2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dniksic/Progrmasko_Inzenjerstvo_Project.git&quot;,
+    &quot;accountId&quot;: &quot;a00e3e50-6baf-4bb7-9676-69ba08a5c0d2&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ej4qmaOvdzA9chBtKo7TCxuryg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,8 +46,9 @@
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
     "Notification.DoNotAsk-Vcs Important Messages": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "git-widget-placeholder": "Produkcija",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -71,12 +77,44 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1712405445321</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Kreiranje projekta">
+      <option name="closed" value="true" />
+      <created>1712406493682</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1712406493682</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Kreiranje projekta">
+      <option name="closed" value="true" />
+      <created>1712406512599</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1712406512599</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Kreiranje projekta">
+      <option name="closed" value="true" />
+      <created>1712406536845</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1712406536845</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
       <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/Produkcija" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
         <entry key="User">
           <value>
             <list>
@@ -97,6 +135,13 @@
             <State>
               <option name="FILTERS">
                 <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Produkcija" />
+                      </list>
+                    </value>
+                  </entry>
                   <entry key="user">
                     <value>
                       <list>
