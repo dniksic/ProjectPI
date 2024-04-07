@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje direktorija">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Dodavanje resursa.">
+      <change beforePath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/Modovi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/pozadina.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/pozadina.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +57,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
-    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Davor/PycharmProjects/EvidencijaProjectPI&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Python.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "development",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Davor/PycharmProjects/EvidencijaProjectPI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -121,7 +130,21 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1712493829800</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Kreiranje direktorija">
+      <option name="closed" value="true" />
+      <created>1712513118395</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1712513118395</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Dodavanje resursa.">
+      <option name="closed" value="true" />
+      <created>1712513179273</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1712513179273</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +210,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kreiranje projekta" />
+    <MESSAGE value="Kreiranje resursa i modova rada sučelja. Apliciranje slike za test." />
     <MESSAGE value="Kreiranje direktorija" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kreiranje direktorija" />
+    <MESSAGE value="Dodavanje resursa." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodavanje resursa." />
   </component>
 </project>
