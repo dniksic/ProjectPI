@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Dodavanje resursa.">
-      <change beforePath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/Modovi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/pozadina.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/pozadina.png" afterDir="false" />
-    </list>
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje sučelja i postavke." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +133,28 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1712513179273</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Kreiranje sučelja i postavke.">
+      <option name="closed" value="true" />
+      <created>1712524308225</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1712524308225</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Kreiranje sučelja i postavke.">
+      <option name="closed" value="true" />
+      <created>1712524381759</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1712524381759</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Kreiranje sučelja i postavke.">
+      <option name="closed" value="true" />
+      <created>1712524403151</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1712524403151</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +223,7 @@
     <MESSAGE value="Kreiranje resursa i modova rada sučelja. Apliciranje slike za test." />
     <MESSAGE value="Kreiranje direktorija" />
     <MESSAGE value="Dodavanje resursa." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodavanje resursa." />
+    <MESSAGE value="Kreiranje sučelja i postavke." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kreiranje sučelja i postavke." />
   </component>
 </project>
