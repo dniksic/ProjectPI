@@ -15,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Produkcija" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,12 +26,12 @@
     &quot;assignee&quot;: &quot;dniksic&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dniksic/ProjectPI.git",
-    "accountId": "a00e3e50-6baf-4bb7-9676-69ba08a5c0d2"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dniksic/ProjectPI.git&quot;,
+    &quot;accountId&quot;: &quot;a00e3e50-6baf-4bb7-9676-69ba08a5c0d2&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -48,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "development",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Davor/PycharmProjects/EvidencijaProjectPI",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
