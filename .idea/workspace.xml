@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje sučelja i postavke." />
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje sučelja i postavke.">
+      <change afterPath="$PROJECT_DIR$/EncodeGenerator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Slike/321654.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Slike/852741.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Slike/123456.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Slike/Slike.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +57,7 @@
   "keyToString": {
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
     "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Python.EncodeGenerator.executor": "Run",
     "Python.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "development",
@@ -58,6 +66,11 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Davor\PycharmProjects\EvidencijaProjectPI\Slike" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
