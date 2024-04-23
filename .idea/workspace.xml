@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje Encoding Generatora, ubacivanje slika lica i enkodiranje.">
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje sučelja i postavke.">
+      <change beforePath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
@@ -20,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/development" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -34,12 +39,12 @@
     &quot;assignee&quot;: &quot;dniksic&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/dniksic/ProjectPI.git&quot;,
-    &quot;accountId&quot;: &quot;a00e3e50-6baf-4bb7-9676-69ba08a5c0d2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dniksic/ProjectPI.git",
+    "accountId": "54a49a36-ba86-4f2c-a7d5-d98f490f8754"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -163,14 +168,7 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1712524403151</updated>
     </task>
-    <task id="LOCAL−00012" summary="Kreiranje Encoding Generatora, ubacivanje slika lica i enkodiranje.">
-      <option name="closed" value="true" />
-      <created>1713436815654</created>
-      <option name="number" value="LOCAL−00012" />
-      <option name="presentableId" value="LOCAL−00012" />
-      <updated>1713436815654</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +238,6 @@
     <MESSAGE value="Kreiranje direktorija" />
     <MESSAGE value="Dodavanje resursa." />
     <MESSAGE value="Kreiranje sučelja i postavke." />
-    <MESSAGE value="Kreiranje Encoding Generatora, ubacivanje slika lica i enkodiranje." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kreiranje Encoding Generatora, ubacivanje slika lica i enkodiranje." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kreiranje sučelja i postavke." />
   </component>
 </project>
