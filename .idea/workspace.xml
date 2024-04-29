@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Popravljen bbox i odradjena detekcija">
-      <change afterPath="$PROJECT_DIR$/AddDataToDatabase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serviceAccountKey.json" afterDir="false" />
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Detekcija funkcionira, zapocet rad s bazom podataka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncodeFile.p" beforeDir="false" afterPath="$PROJECT_DIR$/EncodeFile.p" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EncodeGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/EncodeGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Slike/321654.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Slike/852741.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +60,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "Python.AddDataToDatabase.executor": "Run",
-    "Python.EncodeGenerator.executor": "Run",
-    "Python.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "hsanel",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Davor/PycharmProjects/EvidencijaProjectPI",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;Python.AddDataToDatabase.executor&quot;: &quot;Run&quot;,
+    &quot;Python.EncodeGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hsanel&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Davor/PycharmProjects/EvidencijaProjectPI&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\halac\PycharmProjects\ProjectPI" />
@@ -181,7 +184,14 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1713907135762</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="Popravljen bbox i odradjena detekcija">
+      <option name="closed" value="true" />
+      <created>1714404256446</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1714404256446</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

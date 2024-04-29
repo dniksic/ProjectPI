@@ -1,10 +1,11 @@
 import os
 import pickle
+import cv2
+import os
 import firebase_admin
 from firebase_admin import credentials
-
 from firebase_admin import storage
-import cv2
+from firebase_admin import db
 import face_recognition
 
 
@@ -36,7 +37,7 @@ print(imgIds)
 def findEncodings(imagesList):
     encodeList=[]
     for img in imagesList:
-        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        img=cv2.cvtColor(img,cv2.COLOR_BGRA2RGB)
         encode=face_recognition.face_encodings(img)[0]
         encodeList.append(encode)
 
