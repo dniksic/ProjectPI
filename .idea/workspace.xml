@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Detekcija funkcionira, zapocet rad s bazom podataka">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EncodeFile.p" beforeDir="false" afterPath="$PROJECT_DIR$/EncodeFile.p" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EncodeGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/EncodeGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resursi/Modovi/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resursi/Modovi/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Slike/321654.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Slike/852741.jpeg" beforeDir="false" />
-    </list>
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +183,14 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1714404256446</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta">
+      <option name="closed" value="true" />
+      <created>1714426735420</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1714426735420</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +261,7 @@
     <MESSAGE value="Dodavanje resursa." />
     <MESSAGE value="Kreiranje sučelja i postavke." />
     <MESSAGE value="Popravljen bbox i odradjena detekcija" />
-    <option name="LAST_COMMIT_MESSAGE" value="Popravljen bbox i odradjena detekcija" />
+    <MESSAGE value="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta" />
   </component>
 </project>
