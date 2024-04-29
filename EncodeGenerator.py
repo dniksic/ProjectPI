@@ -1,8 +1,18 @@
 import os
 import pickle
+import firebase_admin
+from firebase_admin import credentials
 
+from firebase_admin import storage
 import cv2
 import face_recognition
+
+
+cred = credentials.Certificate("serviceAccountKey.json")
+firebase_admin.initialize_app(cred,{
+    'databaseURL': "https://evidencijaprepoznavanjemlica-default-rtdb.europe-west1.firebasedatabase.app/",
+    'storageBucket':"evidencijaprepoznavanjemlica.appspot.com"
+})
 
 #importiranje slika iz foldera
 folderPath = 'Slike'
@@ -13,6 +23,12 @@ imgIds = []
 for path in pathList:
     imgList.append(cv2.imread(os.path.join(folderPath, path)))
     imgIds.append(os.path.splitext(path)[0])
+
+    fileName = f'{folderPath}/{path}'
+    bucket = storage.bucket()
+    blob = bucket.blob(fileName)
+    blob.upload_from_filename(fileName)
+
     # print(path)
     # print(os.path.splitext(path)[0])
 print(imgIds)

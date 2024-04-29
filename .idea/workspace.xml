@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Kreiranje sučelja i postavke.">
-      <change beforePath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Popravljen bbox i odradjena detekcija">
+      <change afterPath="$PROJECT_DIR$/AddDataToDatabase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serviceAccountKey.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncodeGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/EncodeGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,12 +40,15 @@
     &quot;assignee&quot;: &quot;dniksic&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dniksic/ProjectPI.git",
-    "accountId": "54a49a36-ba86-4f2c-a7d5-d98f490f8754"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dniksic/ProjectPI.git&quot;,
+    &quot;accountId&quot;: &quot;54a49a36-ba86-4f2c-a7d5-d98f490f8754&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -54,21 +58,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
-    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
-    &quot;Python.EncodeGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Davor/PycharmProjects/EvidencijaProjectPI&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Python.AddDataToDatabase.executor": "Run",
+    "Python.EncodeGenerator.executor": "Run",
+    "Python.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hsanel",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Davor/PycharmProjects/EvidencijaProjectPI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\halac\PycharmProjects\ProjectPI" />
       <recent name="C:\Users\Davor\PycharmProjects\EvidencijaProjectPI\Slike" />
     </key>
   </component>
@@ -168,7 +174,14 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1712524403151</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Popravljen bbox i odradjena detekcija">
+      <option name="closed" value="true" />
+      <created>1713907135762</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1713907135762</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +251,7 @@
     <MESSAGE value="Kreiranje direktorija" />
     <MESSAGE value="Dodavanje resursa." />
     <MESSAGE value="Kreiranje sučelja i postavke." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kreiranje sučelja i postavke." />
+    <MESSAGE value="Popravljen bbox i odradjena detekcija" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popravljen bbox i odradjena detekcija" />
   </component>
 </project>
