@@ -46,17 +46,17 @@ while True:
     for encodeFace, faceLoc in zip(encodeCurFrame, faceCurFrame):
         mathces=face_recognition.compare_faces(encodeListKnown, encodeFace)
         faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
-        #print("matches", mathces)
-        #print("faceDis", faceDis)
+        print("matches", mathces)
+        print("faceDis", faceDis)
 
         mathcIndex=numpy.argmin(faceDis)
         #print("Match Index", mathcIndex)
         if mathces[mathcIndex]:
-            #print("Poznato lice detektirano")
-            #print(imgIds[mathcIndex])
+            print("Poznato lice detektirano")
+            print(imgIds[mathcIndex])
             y1, x2, y2, x1 = faceLoc
             y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
-       #     bbox = 790+x1, 50+y1, x2-x1, y2-y1
+            bbox = (55 + x1, 162 + y1, x2 - x1, y2 - y1)
             cvzone.cornerRect(slikaPozadine, bbox, rt=0)
 
 
