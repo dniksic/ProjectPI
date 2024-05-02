@@ -130,7 +130,7 @@ while True:
                     cv2.FONT_HERSHEY_COMPLEX, 0.8, (50, 50, 50), 1)
 
 
-        slikaPozadine[175:175 + 216, 885:885 + 216] = imgS #
+        slikaPozadine[175:175 + imgS.shape[0], 885:885 + imgS.shape[1]] = imgS
         counter+=1
 
     # Prikazivanje rezultata
