@@ -67,8 +67,8 @@ while True:
     slikaPozadine[150:150 + 480, 44:44 + 640] = img
 
     # Ako imamo modove, postavite ih na pozadinu
-    if slikeModovaLista:
-        slikaPozadine[50:50 + 600, 790:790 + 400] = slikeModovaLista[modeType]
+
+
 
     # Obrada detekcije lica
     for encodeFace, faceLoc in zip(encodeCurFrame, faceCurFrame):
@@ -101,7 +101,7 @@ while True:
 
         if counter != 0:
 
-            if counter ==1:
+            if counter == 1:
 
                 #Povlacenje podataka iz baze
                 studentInfo = db.reference(f'Studenti/{id}').get()
@@ -111,10 +111,20 @@ while True:
                 blob = bucket.get_blob(f'Slike/{id}.png')
                 array = np.frombuffer(blob.download_as_string(), np.uint8)
                 imgS = cv2.imdecode(array, cv2.COLOR_BGRA2BGR)
+
+                #Azuriranje podataka o evidenciji
+                ref = db.reference(''f'Studenti/{id}')
+                studentInfo['ukupno_dolazaka'] += 1
+                ref.child('ukupno_dolazaka').set(studentInfo['ukupno_dolazaka'])
+
+    if 10 < counter < 20:
+        modeType = 2
+        slikaPozadine[50:50 + 600, 790:790 + 400] = slikeModovaLista[modeType]
+
+    if counter <= 10:
+
         cv2.putText(slikaPozadine,str(studentInfo['ukupno_dolazaka']),(835,125),
-                cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1)
-
-
+                    cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1)
         cv2.putText(slikaPozadine, str(studentInfo['titula']), (950, 530),
                     cv2.FONT_HERSHEY_COMPLEX, 0.4, (255, 255, 255),1)
         cv2.putText(slikaPozadine, str(id), (970, 483),
@@ -130,7 +140,7 @@ while True:
                     cv2.FONT_HERSHEY_COMPLEX, 0.8, (50, 50, 50), 1)
 
 
-        slikaPozadine[175:175 + 216, 885:885 + 216] = imgS #
+        #slikaPozadine[175:175 + 216, 885:885 + 216] = imgS #
         counter+=1
 
     # Prikazivanje rezultata
