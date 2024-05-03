@@ -93,6 +93,9 @@ while True:
                     slikaPozadine = cvzone.cornerRect(slikaPozadine, bbox, rt=0)
                 id = imgIds[matchIndex]
                 if counter == 0:
+                    cvzone.putTextRect(slikaPozadine, "Loading",(275,400))
+                    cv2.imshow("Sistem evidencije", slikaPozadine)
+                    cv2.waitKey(1)
                     counter = 1
                     modeType = 1
 
