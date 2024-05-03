@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_4_2024__13_25_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_4_2024__13_25__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
@@ -39,12 +37,12 @@
     &quot;assignee&quot;: &quot;dniksic&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dniksic/ProjectPI.git",
-    "accountId": "a00e3e50-6baf-4bb7-9676-69ba08a5c0d2"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dniksic/ProjectPI.git&quot;,
+    &quot;accountId&quot;: &quot;a00e3e50-6baf-4bb7-9676-69ba08a5c0d2&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -202,7 +200,21 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1714584049030</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta">
+      <option name="closed" value="true" />
+      <created>1714647616808</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1714647616808</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta">
+      <option name="closed" value="true" />
+      <created>1714647631183</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1714647631183</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

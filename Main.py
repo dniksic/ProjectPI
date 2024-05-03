@@ -1,4 +1,3 @@
-import pickle
 import numpy as np
 import cv2
 import os
@@ -8,14 +7,12 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import storage
 from firebase_admin import db
-
-import face_recognition
-
+import pickle
 
 cred = credentials.Certificate("serviceAccountKey.json")
-firebase_admin.initialize_app(cred,{
+firebase_admin.initialize_app(cred, {
     'databaseURL': "https://evidencijaprepoznavanjemlica-default-rtdb.europe-west1.firebasedatabase.app/",
-    'storageBucket':"evidencijaprepoznavanjemlica.appspot.com"
+    'storageBucket': "evidencijaprepoznavanjemlica.appspot.com"
 })
 bucket = storage.bucket()
 
@@ -36,17 +33,15 @@ slikeModovaLista = [cv2.imread(os.path.join(datotekaModovaPutanja, path)) for pa
 
 # Učitavanje enkodirane datoteke
 print("Učitavanje enkodirane datoteke započeto...")
-file = open("EncodeFile.p", "rb")
-encodeListWithIds = pickle.load(file)
-file.close()
+with open("EncodeFile.p", "rb") as file:
+    encodeListWithIds = pickle.load(file)
 encodeListKnown, imgIds = encodeListWithIds
 print("Enkodirana datoteka uspješno učitana.")
 
-modeType= 0
+modeType = 0
 counter = 0
 id = -1
 imgS = []
-
 
 # Glavna petlja
 while True:
@@ -75,23 +70,14 @@ while True:
         matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
         faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
 
-
         # Najbolji match
         matchIndex = np.argmin(faceDis)
-        #print("Match Index:", matchIndex)
 
         if matches[matchIndex]:
-           # print("Poznato lice detektirano:", imgIds[matchIndex])
-
-            # Uzimanje koordinata i pretvaranje u originalnu veličinu
             y1, x2, y2, x1 = faceLoc
             y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
-
-            # Postavljanje okvira
             bbox = (55 + x1, 162 + y1, x2 - x1, y2 - y1)
-            #print("Koordinate bbox-a:", bbox)
 
-            # Provjera da su koordinate unutar granica slike
             if (x1 >= 0 and y1 >= 0 and x2 <= slikaPozadine.shape[1] and y2 <= slikaPozadine.shape[0]):
                 slikaPozadine = cvzone.cornerRect(slikaPozadine, bbox, rt=0)
             id = imgIds[matchIndex]
@@ -100,45 +86,46 @@ while True:
                 modeType = 1
 
         if counter != 0:
-
-            if counter ==1:
-
-                #Povlacenje podataka iz baze
+            if counter == 1:
+                # Povlačenje podataka iz baze
                 studentInfo = db.reference(f'Studenti/{id}').get()
                 print(studentInfo)
-                #Dohvat slike iz storagea
-
+                # Dohvat slike iz storagea
                 blob = bucket.get_blob(f'Slike/{id}.png')
                 array = np.frombuffer(blob.download_as_string(), np.uint8)
-                imgS = cv2.imdecode(array, cv2.COLOR_BGRA2BGR)
-        cv2.putText(slikaPozadine,str(studentInfo['ukupno_dolazaka']),(835,125),
-                cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1)
+                imgS = cv2.imdecode(array, cv2.IMREAD_COLOR)
 
+                # Promjena dimenzija slike da odgovaraju očekivanom području na pozadini
+                imgS_resized = cv2.resize(imgS, (216, 216))
 
+                # Postavljanje slike na pozadinu
+                slikaPozadine[175:175 + 216, 885:885 + 216] = imgS_resized
+
+        cv2.putText(slikaPozadine, str(studentInfo['ukupno_dolazaka']), (835, 125),
+                    cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 1)
         cv2.putText(slikaPozadine, str(studentInfo['titula']), (950, 530),
-                    cv2.FONT_HERSHEY_COMPLEX, 0.4, (255, 255, 255),1)
+                    cv2.FONT_HERSHEY_COMPLEX, 0.4, (255, 255, 255), 1)
         cv2.putText(slikaPozadine, str(id), (970, 483),
                     cv2.FONT_HERSHEY_COMPLEX, 0.7, (255, 255, 255), 1)
         cv2.putText(slikaPozadine, str(studentInfo['godina']), (1005, 605),
-                    cv2.FONT_HERSHEY_COMPLEX, 0.6, (100,100,100), 1)
+                    cv2.FONT_HERSHEY_COMPLEX, 0.6, (100, 100, 100), 1)
         cv2.putText(slikaPozadine, str(studentInfo['godina_upisa']), (1095, 605),
-                    cv2.FONT_HERSHEY_COMPLEX, 0.6, (100,100,100), 1)
+                    cv2.FONT_HERSHEY_COMPLEX, 0.6, (100, 100, 100), 1)
 
-        (w,h), _= cv2.getTextSize(studentInfo['name'],cv2.FONT_HERSHEY_COMPLEX,1,1)
-        offset = (414-w)//2
-        cv2.putText(slikaPozadine, str(studentInfo['name']), (808+offset, 445),
+        (w, h), _ = cv2.getTextSize(studentInfo['name'], cv2.FONT_HERSHEY_COMPLEX, 1, 1)
+        offset = (414 - w) // 2
+        cv2.putText(slikaPozadine, str(studentInfo['name']), (808 + offset, 445),
                     cv2.FONT_HERSHEY_COMPLEX, 0.8, (50, 50, 50), 1)
 
-
-        slikaPozadine[175:175 + imgS.shape[0], 885:885 + imgS.shape[1]] = imgS
-        counter+=1
+        slikaPozadine[175:175 + 216, 885:885 + 216] = imgS_resized
+        counter += 1
 
     # Prikazivanje rezultata
     cv2.imshow("Sistem evidencije", slikaPozadine)
 
     # Uvjet za izlaz iz petlje
     if cv2.waitKey(1) & 0xFF == ord('q'):
-             break
+        break
 
 cap.release()  # Oslobađanje resursa
 cv2.destroyAllWindows()  # Zatvaranje svih prozora
