@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta">
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="merge">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_11__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_12__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
@@ -26,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="development" />
+        <entry key="$PROJECT_DIR$" value="hsanel" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -214,7 +216,14 @@
       <option name="presentableId" value="LOCAL−00017" />
       <updated>1714647631183</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL−00018" summary="merge">
+      <option name="closed" value="true" />
+      <created>1714938463661</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1714938463661</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +297,7 @@
     <MESSAGE value="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta" />
     <MESSAGE value="Slika se povlači i prikazuje ispravno" />
     <MESSAGE value="Slika se povlači i prikazuje ispravno!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slika se povlači i prikazuje ispravno!" />
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
 </project>

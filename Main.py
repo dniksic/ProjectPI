@@ -102,11 +102,11 @@ while True:
             if counter != 0:
 
                 if counter == 1:
-                    #Povlacenje podataka iz baze
+                    #Povlačenje podataka iz baze
                     studentInfo = db.reference(f'Studenti/{id}').get()
                     print(studentInfo)
-                    #Dohvat slike iz storagea
 
+                    #Dohvat slike iz storagea
                     blob = bucket.get_blob(f'Slike/{id}.png')
                     array = np.frombuffer(blob.download_as_string(), np.uint8)
                     imgS = cv2.imdecode(array, cv2.IMREAD_COLOR)
@@ -134,6 +134,38 @@ while True:
                             studentInfo['ukupno_dolazaka'] = 1
                         ref.child('ukupno_dolazaka').set(studentInfo['ukupno_dolazaka'])
                         ref.child('zadnja_evidencija_vrijeme').set(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
+                        # Dodavanje dodatnih podataka o dolasku
+                        arrival_data = {
+                            "employee_id": id,
+                            "arrival_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                            "location": "Office",
+                            "additional_info": "Some additional information about the arrival"
+                        }
+
+                        # Kreiranje naziva datoteke za screen capture
+                        current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+                        frame_file_name = f"Dolasci/frame_{id}_{current_time}.png"
+
+                        # Snimanje screen capture s kamere
+                        success, frame = cap.read()
+                        if success:
+                            # Pretvaranje slike u binarni format
+                            _, img_encode = cv2.imencode('.png', frame)
+                            img_bytes = img_encode.tobytes()
+
+                            # Spremanje screen capture-a u GCS
+                            blob_frame = bucket.blob(frame_file_name)
+                            blob_frame.upload_from_string(img_bytes, content_type='image/png')
+
+                            # Dodavanje naziva screen capture-a u podatke o dolasku
+                            arrival_data['frame_file_name'] = frame_file_name
+
+                            # Dodavanje dodatnih podataka o dolasku u bazu podataka
+                            ref.child('dolasci').push().set(arrival_data)
+                        else:
+                            print("Nije uspjelo čitanje slike s kamere.")
+
                     else:
                         modeType = 3
                         counter = 0
@@ -163,11 +195,6 @@ while True:
                         cv2.putText(slikaPozadine, str(studentInfo['name']), (808 + offset, 445),
                                     cv2.FONT_HERSHEY_COMPLEX, 0.8, (50, 50, 50), 1)
 
-
-
-                        # Postavljanje slike na pozadinu
-                        # Promjena dimenzija slike da odgovaraju očekivanom području na pozadini
-
                         slikaPozadine[175:175 + 216, 885:885 + 216] = imgS_resized
 
                 counter += 1
@@ -183,6 +210,7 @@ while True:
     else:
         modeType= 0
         counter = 0
+
     # Prikazivanje rezultata
     cv2.imshow("Sistem evidencije", slikaPozadine)
 
