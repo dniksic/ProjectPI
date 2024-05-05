@@ -286,6 +286,8 @@
     <MESSAGE value="Kreiranje sučelja i postavke." />
     <MESSAGE value="Popravljen bbox i odradjena detekcija" />
     <MESSAGE value="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Detekcija funkcionira, zapocet rad s bazom podataka, povlace se svi podatci iz baze, trenutno je problem jedino sa prikazom slike studenta" />
+    <MESSAGE value="Slika se povlači i prikazuje ispravno" />
+    <MESSAGE value="Slika se povlači i prikazuje ispravno!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slika se povlači i prikazuje ispravno!" />
   </component>
 </project>
