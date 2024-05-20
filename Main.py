@@ -121,6 +121,8 @@ while True:
                     print(secondsElapsed)
                     if secondsElapsed > 30:
                         ref = db.reference(f'Studenti/{id}')
+                        today_date = datetime.now().strftime("%Y-%m-%d")
+                        current_time = datetime.now().strftime("%H:%M:%S")
                         if 'ukupno_dolazaka' in studentInfo:
                             try:
                                 # Pretvorite u cijeli broj ako je moguće
@@ -135,6 +137,8 @@ while True:
                         ref.child('ukupno_dolazaka').set(studentInfo['ukupno_dolazaka'])
                         ref.child('zadnja_evidencija_vrijeme').set(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
+                        dolasci_ref = ref.child('dolasci').child(today_date)
+                        dolasci_ref.push(current_time)
                         # Dodavanje dodatnih podataka o dolasku
                         arrival_data = {
                             "employee_id": id,
