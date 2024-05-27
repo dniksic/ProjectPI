@@ -123,6 +123,7 @@ while True:
                         ref = db.reference(f'Studenti/{id}')
                         today_date = datetime.now().strftime("%Y-%m-%d")
                         current_time = datetime.now().strftime("%H:%M:%S")
+                        arrival_time = datetime.now().strftime("%H:%M:%S")
                         if 'ukupno_dolazaka' in studentInfo:
                             try:
                                 # Pretvorite u cijeli broj ako je moguće
@@ -138,13 +139,9 @@ while True:
                         ref.child('zadnja_evidencija_vrijeme').set(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
                         dolasci_ref = ref.child('dolasci').child(today_date)
-                        dolasci_ref.push(current_time)
-                        # Dodavanje dodatnih podataka o dolasku
                         arrival_data = {
-                            "employee_id": id,
                             "arrival_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                            "location": "Office",
-                            "additional_info": "Some additional information about the arrival"
+                            "frame_file_name": f"Dolasci/frame_{id}_{today_date}_{arrival_time}.png"
                         }
 
                         # Kreiranje naziva datoteke za screen capture
@@ -166,7 +163,7 @@ while True:
                             arrival_data['frame_file_name'] = frame_file_name
 
                             # Dodavanje dodatnih podataka o dolasku u bazu podataka
-                            ref.child('dolasci').push().set(arrival_data)
+                            dolasci_ref.child(arrival_time).set(arrival_data)
                         else:
                             print("Nije uspjelo čitanje slike s kamere.")
 

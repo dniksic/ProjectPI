@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="merge">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_11__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_12__Changes_.xml" afterDir="false" />
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije">
+      <change beforePath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_11__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2024__21_43__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2024__21_45__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
@@ -42,7 +46,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/dniksic/ProjectPI.git&quot;,
-    &quot;accountId&quot;: &quot;a00e3e50-6baf-4bb7-9676-69ba08a5c0d2&quot;
+    &quot;accountId&quot;: &quot;54a49a36-ba86-4f2c-a7d5-d98f490f8754&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -57,21 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
-    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
-    &quot;Python.AddDataToDatabase.executor&quot;: &quot;Run&quot;,
-    &quot;Python.EncodeGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Davor/PycharmProjects/EvidencijaProjectPI&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Python.AddDataToDatabase.executor": "Run",
+    "Python.EncodeGenerator.executor": "Run",
+    "Python.Main.executor": "Run",
+    "Python.chart.executor": "Run",
+    "Python.dnevni_chart.executor": "Run",
+    "Python.mjesecni_chart.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "development",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Davor/PycharmProjects/EvidencijaProjectPI",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\halac\PycharmProjects\ProjectPI" />
@@ -223,7 +230,14 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1714938463661</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije">
+      <option name="closed" value="true" />
+      <created>1716235635526</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1716235635526</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +312,7 @@
     <MESSAGE value="Slika se povlači i prikazuje ispravno" />
     <MESSAGE value="Slika se povlači i prikazuje ispravno!" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije" />
   </component>
 </project>
