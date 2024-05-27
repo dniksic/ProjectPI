@@ -164,7 +164,7 @@ def plot_yearly_arrivals(yearly_arrivals):
 
 # Glavni dio koda
 
-student_id = "321654"  # Zamijenite s odgovarajućim ID-jem studenta
+student_id = "852741"  # Zamijenite s odgovarajućim ID-jem studenta
 
 # Mjesečni dolasci
 monthly_arrivals = fetch_monthly_arrivals(student_id)

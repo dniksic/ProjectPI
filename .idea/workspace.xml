@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije">
-      <change beforePath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EvidencijaSnimanjemSlikaLicaKorisnikaPutemWebKamere.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_11__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024__19_12__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2024__21_43__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2024__21_45__Changes_.xml" beforeDir="false" />
+    <list default="true" id="bb1f82a9-9547-4b58-97f7-9c524bf33587" name="Changes" comment="Odradjeni izvjestaji, reformatiran zapis o dolascima">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/izvjestaji.py" beforeDir="false" afterPath="$PROJECT_DIR$/izvjestaji.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" exportFormat="Xml" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -65,12 +60,17 @@
   "keyToString": {
     "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
     "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Python tests.Python tests in autotest.py.executor": "Run",
+    "Python tests.Python tests in funkcionalnitest.py.executor": "Run",
+    "Python tests.Python tests in unitest.py.executor": "Run",
     "Python.AddDataToDatabase.executor": "Run",
     "Python.EncodeGenerator.executor": "Run",
     "Python.Main.executor": "Run",
     "Python.chart.executor": "Run",
     "Python.dnevni_chart.executor": "Run",
+    "Python.izvjestaji.executor": "Run",
     "Python.mjesecni_chart.executor": "Run",
+    "Python.unittest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "development",
     "ignore.virus.scanning.warn.message": "true",
@@ -237,7 +237,21 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1716235635526</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="Odradjeni izvjestaji, reformatiran zapis o dolascima">
+      <option name="closed" value="true" />
+      <created>1716800307045</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1716800307045</updated>
+    </task>
+    <task id="LOCAL−00021" summary="Odradjeni izvjestaji, reformatiran zapis o dolascima">
+      <option name="closed" value="true" />
+      <created>1716800348068</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1716800348068</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +327,7 @@
     <MESSAGE value="Slika se povlači i prikazuje ispravno!" />
     <MESSAGE value="merge" />
     <MESSAGE value="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zabiljezavanje dolazaka po datumu odradjeni modovi i zabrana ponovne evidencije" />
+    <MESSAGE value="Odradjeni izvjestaji, reformatiran zapis o dolascima" />
+    <option name="LAST_COMMIT_MESSAGE" value="Odradjeni izvjestaji, reformatiran zapis o dolascima" />
   </component>
 </project>
